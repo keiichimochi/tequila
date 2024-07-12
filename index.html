@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あさひテキーラプロジェクト - ようこそ！</title>
+    <style>
+        body {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 5 L35 20 L45 25 L35 30 L30 45 L25 30 L15 25 L25 20 Z' fill='%2300AA00'/%3E%3Crect x='28' y='45' width='4' height='10' fill='%23885500'/%3E%3C/svg%3E");
+            background-color: #FFFF99;
+            font-family: "Comic Sans MS", cursive;
+            color: #FF1493;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 165, 0, 0.9);
+            border: 5px solid #FF00FF;
+            padding: 20px;
+            box-shadow: 10px 10px 0 #00FFFF;
+        }
+        h1 {
+            font-size: 48px;
+            text-shadow: 3px 3px #00FF00, -3px -3px #FF0000;
+            animation: rainbow 5s infinite;
+        }
+        @keyframes rainbow {
+            0% {color: red;}
+            14% {color: orange;}
+            28% {color: yellow;}
+            42% {color: green;}
+            57% {color: blue;}
+            71% {color: indigo;}
+            85% {color: violet;}
+            100% {color: red;}
+        }
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #FF0000;
+            background-color: #FFFF00;
+        }
+        .visitor-counter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00FF00;
+            background-color: #000000;
+            padding: 10px;
+            margin-top: 20px;
+            border: 3px solid #FFFFFF;
+            display: inline-block;
+        }
+        .construction {
+            width: 100px;
+            height: 100px;
+            background-color: #FFFF00;
+            margin: 20px auto;
+            animation: rotate 3s linear infinite;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+        .blog-menu {
+            background-color: #00FF00;
+            border: 3px dashed #FF00FF;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .blog-menu a {
+            display: block;
+            margin: 5px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .new-icon {
+            display: inline-block;
+            background-color: #FF0000;
+            color: #FFFF00;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 10px;
+            animation: blink-animation 0.5s steps(5, start) infinite;
+        }
+        .tequila-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #00FFFF;
+            border: 2px solid #0000FF;
+            transform: rotate(45deg);
+            margin-right: 5px;
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: rotate(45deg); }
+            25% { transform: rotate(60deg); }
+            50% { transform: rotate(45deg); }
+            75% { transform: rotate(30deg); }
+            100% { transform: rotate(45deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>あさひテキーラプロジェクト</h1>
+        <marquee behavior="alternate" scrollamount="12" class="blink">★☆★ ようこそ！KIYOSHIのテキーラ珍道中へ ★☆★</marquee>
+        <hr color="#FF00FF" size="5">
+        <p><font size="5" color="#008000">旭市からメキシコへ、夢のテキーラを求めて</font></p>
+        <img src="./images/hamabe.jpg" alt="KIYOSHIとイガベ" style="max-width: 100%; height: auto; border: 3px solid #FF00FF;">
+        <br><br>
+        <font size="4">
+            <a href="#about">プロジェクト概要</a> |
+            <a href="#blog">ブログ</a> |
+            <a href="./blog/interview.html">インタビュー</a> |
+            <a href="#contact">お問い合わせ</a>
+        </font>
+        <div class="blog-menu">
+            <h2><font color="#FF00FF">★ KIYOSHIの珍道中ブログ ★</font></h2>
+            <a href="./blog/day1.html"><span class="tequila-icon"></span>Day1「アガベ買い付け大作戦〜イカした冒険の始まりだべ！〜」</a>
+            <a href="./blog/day2.html"><span class="tequila-icon"></span>Day2「アガベと帰国作戦〜イカれた作戦で一発逆転だべ！〜」</a>
+            <a href="./blog/day3.html"><span class="tequila-icon"></span>Day3「アガベ栽培開始！〜旭の大地で夢が芽吹くべ〜」</a>
+            <a href="./blog/day4.html"><span class="tequila-icon"></span>Day4「イガベ旋風、旭市を駆け抜ける！〜意外な展開にアガベもビックリ〜」</a>
+            <a href="./blog/day5.html"><span class="tequila-icon"></span>Day5「イガベVSアガベ！旭で繰り広げられる珍バトル〜」<span class="new-icon">NEW!</span></a>
+        </div>
+        <hr color="#FF00FF" size="5">
+        <div class="construction"></div>
+        <p><font color="#FF0000">申し訳ありません。サイト工事中です！</font></p>
+        <p>最新情報は<a href="mailto:info@asahi-tequila.jp">メール</a>でお問い合わせください。</p>
+        <div class="visitor-counter">
+            あなたは 1234567 人目の訪問者です！
+        </div>
+        <hr color="#FF00FF" size="5">
+        <font size="2">
+            © 2024 あさひテキーラプロジェクト. All rights reserved.<br>
+            最終更新日: 2024年7月12日
+        </font>
+    </div>
+</body>
+</html>

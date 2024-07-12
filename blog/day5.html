@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5：イガベVSアガベ！旭で繰り広げられる珍バトル〜</title>
+    <style>
+        body {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 5 L35 20 L45 25 L35 30 L30 45 L25 30 L15 25 L25 20 Z' fill='%2300AA00'/%3E%3Crect x='28' y='45' width='4' height='10' fill='%23885500'/%3E%3C/svg%3E");
+            background-color: #FFFF99;
+            font-family: "Comic Sans MS", cursive;
+            color: #000080;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid #FF00FF;
+            padding: 20px;
+            box-shadow: 10px 10px 0 #00FFFF;
+        }
+        h1, h2 {
+            color: #FF1493;
+            text-align: center;
+            text-shadow: 2px 2px #00FF00;
+        }
+        h3 {
+            color: #0000FF;
+            border-bottom: 2px dashed #FF00FF;
+            padding-bottom: 5px;
+        }
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation a {
+            display: inline-block;
+            background-color: #00FF00;
+            color: #0000FF;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #0000FF;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+        .navigation a:hover {
+            background-color: #FFFF00;
+        }
+        .tequila-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #00FFFF;
+            border: 2px solid #0000FF;
+            transform: rotate(45deg);
+            margin-right: 5px;
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: rotate(45deg); }
+            25% { transform: rotate(60deg); }
+            50% { transform: rotate(45deg); }
+            75% { transform: rotate(30deg); }
+            100% { transform: rotate(45deg); }
+        }
+        .igabe-vs-agave {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .igabe, .agave {
+            width: 100px;
+            height: 100px;
+            background-color: #00AA00;
+            position: relative;
+        }
+        .igabe {
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+        }
+        .agave {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        .igabe::before, .igabe::after, .agave::before, .agave::after {
+            content: '';
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            top: 30px;
+        }
+        .igabe::before, .agave::before {
+            left: 25px;
+        }
+        .igabe::after, .agave::after {
+            right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="tequila-icon"></span>KIYOSHIのテキーラ珍道中ブログ<span class="tequila-icon"></span></h1>
+        <h2 class="blink">Day 5: イガベVSアガベ！旭で繰り広げられる珍バトル〜</h2>
+        
+        <p>おっす！KIYOSHIだ。千葉テキーラプロジェクト5日目、もはや何が起こっても驚かねぇ！...と思ってたら、またもや予想外の展開だべ！</p>
+
+        <div class="igabe-vs-agave">
+            <div class="igabe"></div>
+            <div class="agave"></div>
+        </div>
+
+        <h3>0600: 朝イチからのサプライズ</h3>
+        <p>目覚ましを止めようとしたら、枕元にイガベのぬいぐるみが！誰だよ、こんなの作ったの？...って、よく見りゃ俺が寝ぼけて作ったみてぇだ。これ、意外といい出来じゃね？</p>
+
+        <h3>0800: 畑へ向かう途中</h3>
+        <p>今日こそアガベの世話に集中するぞ！...と意気込んで外に出たら、町中がイガベだらけ。看板、ポスター、even マンホールまで！おい、誰だよ担当者は。ってか、俺？</p>
+
+        <h3>1000: アガベ畑到着、そこには...</h3>
+        <p>畑に着いたら、アガベの周りに「イガベ守り隊」とかいう謎の集団が！「KIYOSHIさん、イガベの聖地を守ります！」だと。いやいや、これアガベだから。イガベは架空のキャラだって！</p>
+
+        <h3>1200: 突然の記者会見</h3>
+        <p>町長が緊急記者会見。「イガベテーマパーク構想」を発表だと。おいおい、話が大きくなりすぎじゃね？横では商工会の人が「イガベバーガー」の試作品を配ってる。味は...意外とイケる！</p>
+
+        <h3>1400: アガベ観察タイム（やっと）</h3>
+        <p>やれやれ、やっとアガベの世話にとりかかれる。ん？葉っぱの先端が少し青くなってきた？これってもしかして...イガベ化？いや、普通の成長か。最近、何が普通か分からなくなってきたぞ。</p>
+
+        <h3>1600: 予期せぬ来訪者</h3>
+        <p>なんと、メキシコ大使館から視察団が！「イガベ現象」を調査に来たらしい。アガベ畑見せたら「これは違う種類のアガベですね」だと。そりゃそうだ、イガベはキャラクターだって！</p>
+
+        <h3>1800: 夕方のニュースで...</h3>
+        <p>地元ニュースで「イガベ旋風」特集。街頭インタビューで爺ちゃんが「イガベは俺の若い頃からおったぞ」だと。いやいや、それ昔話と混ざってるべ！</p>
+
+        <h3>2000: 今日の反省会（独り言）</h3>
+        <p>さて、今日の教訓をまとめるべ：</p>
+        <ol>
+            <li>寝ぼけて作ったものが町のシンボルになる可能性がある</li>
+            <li>アガベとイガベの線引きが更に難しくなった</li>
+            <li>架空のキャラが実在の生き物より人気が出ることがある</li>
+            <li>メキシコ大使館も巻き込む勢いには要注意</li>
+            <li>爺ちゃんの記憶は信用ならない（でも温かみがある）</li>
+        </ol>
+
+        <h3>2200: 明日への意気込み</h3>
+        <p>明日こそアガベ栽培に集中するぞ！そういや、テキーラのレシピ研究もせねば。イガベテキーラとか作ったら売れるかな？...って、それアガベから作るんだった。もう何が何だか。</p>
+
+        <p>それじゃあ、おやすみだべ。明日はイガベ...じゃなかった、アガベ栽培に全力投球だ！夢の中でイガベが踊ってないことを祈るべ...。</p>
+
+        <div class="navigation">
+            <a href="./day4.html">← Day 4</a>
+            <a href="../index.html">ホームページ</a>
+            <a href="#">Day 6 →</a>
+        </div>
+    </div>
+</body>
+</html>
