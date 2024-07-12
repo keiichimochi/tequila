@@ -15,7 +15,8 @@
             padding: 0;
         }
         .container {
-            width: 800px;
+            width: 90%;
+            max-width: 800px;
             margin: 20px auto;
             background-color: rgba(255, 165, 0, 0.9);
             border: 5px solid #FF00FF;
@@ -23,7 +24,7 @@
             box-shadow: 10px 10px 0 #00FFFF;
         }
         h1 {
-            font-size: 48px;
+            font-size: 2.5em;
             text-shadow: 3px 3px #00FF00, -3px -3px #FF0000;
             animation: rainbow 5s infinite;
         }
@@ -54,7 +55,7 @@
             background-color: #FFFF00;
         }
         .visitor-counter {
-            font-size: 24px;
+            font-size: 1.2em;
             font-weight: bold;
             color: #00FF00;
             background-color: #000000;
@@ -85,13 +86,13 @@
             display: block;
             margin: 5px 0;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 1em;
         }
         .new-icon {
             display: inline-block;
             background-color: #FF0000;
             color: #FFFF00;
-            font-size: 12px;
+            font-size: 0.7em;
             padding: 2px 5px;
             border-radius: 10px;
             animation: blink-animation 0.5s steps(5, start) infinite;
@@ -113,6 +114,26 @@
             75% { transform: rotate(30deg); }
             100% { transform: rotate(45deg); }
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #FF00FF;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .blog-menu a {
+                font-size: 0.9em;
+            }
+            .visitor-counter {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -120,17 +141,17 @@
         <h1>あさひテキーラプロジェクト</h1>
         <marquee behavior="alternate" scrollamount="12" class="blink">★☆★ ようこそ！KIYOSHIのテキーラ珍道中へ ★☆★</marquee>
         <hr color="#FF00FF" size="5">
-        <p><font size="5" color="#008000">旭市からメキシコへ、夢のテキーラを求めて</font></p>
-        <img src="./images/hamabe.jpg" alt="KIYOSHIとイガベ" style="max-width: 100%; height: auto; border: 3px solid #FF00FF;">
+        <p style="font-size: 1.2em; color: #008000;">旭市からメキシコへ、夢のテキーラを求めて</p>
+        <img src="./images/hamabe.jpg" alt="KIYOSHIとイガベ">
         <br><br>
-        <font size="4">
-            <a href="#about">プロジェクト概要</a> |
-            <a href="#blog">ブログ</a> |
+        <div style="font-size: 1em;">
+           
+            <a href="#blog">⇩⇩⇩ブログ⇩⇩⇩</a> |
             <a href="./blog/interview.html">インタビュー</a> |
-            <a href="#contact">お問い合わせ</a>
-        </font>
+            <a href="#contact">お問い合わせ </a>
+        </div>
         <div class="blog-menu">
-            <h2><font color="#FF00FF">★ KIYOSHIの珍道中ブログ ★</font></h2>
+            <h2 style="color: #FF00FF;">★ KIYOSHIの珍道中ブログ ★</h2>
             <a href="./blog/day1.html"><span class="tequila-icon"></span>Day1「アガベ買い付け大作戦〜イカした冒険の始まりだべ！〜」</a>
             <a href="./blog/day2.html"><span class="tequila-icon"></span>Day2「アガベと帰国作戦〜イカれた作戦で一発逆転だべ！〜」</a>
             <a href="./blog/day3.html"><span class="tequila-icon"></span>Day3「アガベ栽培開始！〜旭の大地で夢が芽吹くべ〜」</a>
@@ -139,16 +160,16 @@
         </div>
         <hr color="#FF00FF" size="5">
         <div class="construction"></div>
-        <p><font color="#FF0000">申し訳ありません。サイト工事中です！</font></p>
+        <p style="color: #FF0000;">申し訳ありません。サイト工事中です！</p>
         <p>最新情報は<a href="mailto:info@asahi-tequila.jp">メール</a>でお問い合わせください。</p>
         <div class="visitor-counter">
             あなたは 1234567 人目の訪問者です！
         </div>
         <hr color="#FF00FF" size="5">
-        <font size="2">
+        <div style="font-size: 0.8em;">
             © 2024 あさひテキーラプロジェクト. All rights reserved.<br>
             最終更新日: 2024年7月12日
-        </font>
+        </div>
     </div>
 </body>
 </html>
